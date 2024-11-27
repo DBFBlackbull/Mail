@@ -10,9 +10,10 @@ An extension to the Blizzard mail interface which
 **\<Right Click>** to add inventory items to the trade frame.
 
 Note that due to limitations of the 1.12 API, behind the scenes, the items must be sent in separate mails.<br/>
-As a result of this **COD will only apply to the first item** if multiple items are added.
+CoD can still be applied to multiple items, but all items will have the same price, so this is most useful when selling multiple of the same item.<br>
+Sending money along with multiple items will only attach money to the **first mail** to avoid draining all your gold by mistake.<br>
 
-Also note that COD is always ignored when opening, both automatically as well as by **\<Right Click>**.
+Also note that CoD is always ignored when opening, both automatically as well as by **\<Right Click>**.
 
 ![Alt text](http://i.imgur.com/H0MUmXd.png)
 
