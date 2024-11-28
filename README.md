@@ -22,3 +22,4 @@ Also note that CoD is always ignored when opening, both automatically as well as
 ## Fork changes
 
 * Can now do mass CoD mails
+* Added page numbers to inbox from EinBaum: https://github.com/shirsig/Mail/commit/1f003118f0caa00f0fc0ffbef92fcb95c447a832
