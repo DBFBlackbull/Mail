@@ -18,3 +18,7 @@ Also note that CoD is always ignored when opening, both automatically as well as
 ![Alt text](http://i.imgur.com/H0MUmXd.png)
 
 ![Alt text](http://i.imgur.com/ZDyfMIK.png)
+
+## Fork changes
+
+* Can now do mass CoD mails
