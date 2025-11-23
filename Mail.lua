@@ -220,7 +220,6 @@ do
 end
 
 do
-	local TakeInboxMoney, TakeInboxItem, DeleteInboxItem = TakeInboxMoney, TakeInboxItem, DeleteInboxItem -- hack to prevent beancounter from deleting mail
 	function Inbox_Open(i)
 		GetInboxText(i)
 		TakeInboxMoney(i)
