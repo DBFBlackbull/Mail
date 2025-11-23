@@ -221,10 +221,21 @@ end
 
 do
 	function Inbox_Open(i)
-		GetInboxText(i)
-		TakeInboxMoney(i)
-		TakeInboxItem(i)
-		DeleteInboxItem(i)
+		GetInboxText(i) -- Marks the mail as read
+		local _, _, _, _, money = GetInboxHeaderInfo(i)
+		if money > 0 then
+			TakeInboxMoney(i)
+		end
+		local itemName = GetInboxItem(i)
+		if itemName then
+			TakeInboxItem(i)
+		end
+
+		_, _, _, _, money = GetInboxHeaderInfo(i)
+		itemName = GetInboxItem(i)
+		if money == 0 and itemName == nil then
+			DeleteInboxItem(i) -- only delete if mail is empty
+		end
 	end
 end
 
